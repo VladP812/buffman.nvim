@@ -17,7 +17,7 @@ return require('packer').startup(function(use)
   }
 end)
 ```
-- Using **Lazy**: add this to your init.lua (or any other file where you setup lazy)
+- Using **Lazy** - add this to your init.lua (or any other file where you setup lazy)
 ```lua
 require("lazy").setup({
   {
