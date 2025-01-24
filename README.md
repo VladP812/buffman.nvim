@@ -53,9 +53,8 @@ local buffman = require("buffman")
 
 All further configuration must be done in the same file. Just keep appending lines in the `buffman.lua` file.
 
-<h3 align="center">Keymaps</h3>
+<h3 align="center" id="keymaps">Keymaps</h3>
 
-## keymaps
 - Delete selected buffer
 ```lua
 buffman.keymaps.delete_selected_buffer = "d" -- defaults to d
