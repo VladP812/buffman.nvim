@@ -28,7 +28,7 @@ require("lazy").setup({
 ```
 - Then, once installed using any plugin manager, you need to bind a keymap to the open function. It can be done in your `remaps.lua` file (or any other file where you setup key bindings) by appending following line:
 ```lua
-vim.keymap.set("n", "<leader>wo", require("buffman").open_buffman)
+vim.keymap.set("n", "<leader>wo", require("buffman").open_buffman) -- defaults to <leader>+w+o
 ```
 
 <h1 align="center">Usage</h1>
