@@ -33,7 +33,7 @@ vim.keymap.set("n", "<leader>wo", require("buffman").open_buffman) -- defaults t
 
 <h1 align="center">Usage</h1>
 
-- Once installed you can open the Buffman window with the keymap you specified or if you are using the default one press `Leader+W+O`
+- Once installed you can open the Buffman window with the keymap you specified (more later in [Configuring section](#keymaps)) or if you are using the default one press `Leader+W+O`
 - In the opened window you will see a list of filenames which represent currently opened buffers.
 - Use `k` and `j` to choose a buffer (simply by moving cursor over it's name).
 - To switch to that buffer press `<CR> (return i.e. Enter)`.
@@ -55,6 +55,7 @@ All further configuration must be done in the same file. Just keep appending lin
 
 <h3 align="center">Keymaps</h3>
 
+## keymaps
 - Delete selected buffer
 ```lua
 buffman.keymaps.delete_selected_buffer = "d" -- defaults to d
