@@ -1,6 +1,6 @@
 <h1 align="center">Buffman</h1>
 
-<p>Buffman is a very simple Neovim plugin for switching between and deleting opened buffers. It integrates very well with builtin netrw file explorer and if you are one of those minimalists who likes to keeps things simple, you may find it useful.</p>
+<p>Buffman is a very simple Neovim plugin for switching between and deleting opened buffers. It integrates very well with builtin netrw file explorer and if you are one of those minimalists who likes to keep things simple, you may find it useful.</p>
 
 <h1 align="center">Installation</h1>
 
