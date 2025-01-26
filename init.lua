@@ -61,6 +61,9 @@ local function fill_buffer()
         end
         if vim.api.nvim_buf_is_loaded(buffer_id) then
             local buf_name = vim.api.nvim_buf_get_name(buffer_id)
+            if buf_name == "" then
+             goto continue
+            end
             local file_name = buf_name
             if not Buffman.config.full_buffer_names then
                 file_name = buf_name:match("^.+[/\\](.+)$")
@@ -97,7 +100,7 @@ end
 function Buffman.switch_to_selected_buffer()
     local line = vim.fn.line(".")
     local selected_buffer_id = tonumber(vim.api.nvim_buf_get_lines(Buffman.buffer_id, line - 1,
-                                                                line,false)[1]:match("^%d+"))
+                                                                line, false)[1]:match("^%d+"))
     if selected_buffer_id then
         vim.api.nvim_win_close(Buffman.window_id, true)
         vim.api.nvim_buf_delete(Buffman.buffer_id, {force = true})
